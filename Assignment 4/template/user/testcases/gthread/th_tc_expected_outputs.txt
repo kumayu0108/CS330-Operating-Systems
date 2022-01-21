@@ -1,0 +1,64 @@
+/// test case 1 expected output  ///
+
+GemOS# init
+Setting up init process ...
+Page table setup done, launching init ...
+Created thread: 0
+[pid 2]Arg is 1
+Thread 0 returned is 101
+Cleaned up init process
+GemOS shell again!
+
+
+-------------------------------------
+
+/// test case 2 expected output ////
+
+
+GemOS# init
+Setting up init process ...
+Page table setup done, launching init ...
+Created thread: 0
+[pid 2]Arg is 1
+Thread 0 returned is 101
+Cleaned up init process
+GemOS shell again!
+
+
+--------------------------------------
+
+
+/// test case 3 expected output ////
+
+
+GemOS# init
+Setting up init process ...
+Page table setup done, launching init ...
+Created thread: 0
+Created thread: 1
+Segfault for [3] @0x100000A37 for address 0x180209000. Exiting
+Thread 0 returned
+Thread 1 returned
+Cleaned up init process
+GemOS shell again!
+
+
+
+-----------------------------------------
+
+/// test case 4 expected output ///
+
+
+GemOS# init
+Setting up init process ...
+Page table setup done, launching init ...
+Created thread: 0
+Created thread: 1
+abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv
+Thread 0 returned
+Thread 1 returned
+Cleaned up init process
+GemOS shell again!
+
+
+-----------------------------------------
